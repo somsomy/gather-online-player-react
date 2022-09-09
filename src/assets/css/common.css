@@ -20,13 +20,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3.5rem;
+  margin: 2rem;
 }
 
 .loader span {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   background: #eaeef0;
   border: 6px solid #eaeef0;
   box-shadow: -8px -8px 15px rgba(255,255,255,1), 8px 8px 25px rgba(0,0,0,0.15);
@@ -63,7 +63,7 @@ body {
   }
 }
 
-.loader h1 {
+.loader h2 {
   position: absolute;
   color: #727070;
   z-index: 2;
@@ -71,8 +71,8 @@ body {
 
 .text {
   position: absolute;
-  width: 340px;
-  height: 340px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   animation: animateText 25s linear infinite;
 }
@@ -90,7 +90,7 @@ body {
   position: absolute;
   left: 50%;
   display: block;
-  transform-origin: 0 170px;
+  transform-origin: 0 120px;
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 1em;
 }

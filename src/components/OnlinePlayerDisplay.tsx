@@ -24,7 +24,7 @@ export default function OnlinePlayerDisplay() {
         <span>
           <i></i>
         </span>
-        <h1>{data?.count ?? 0}명</h1>
+        <h2>{data?.count ?? 0}명</h2>
       </div>
     </div>
   );
