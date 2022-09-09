@@ -1,4 +1,3 @@
-import { useNumberOfPlayers } from './api/gather';
 import OnlinePlayerDisplay from './components/OnlinePlayerDisplay';
 
 function App() {
