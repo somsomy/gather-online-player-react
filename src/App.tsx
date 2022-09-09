@@ -4,8 +4,7 @@ import axios from "axios";
 
 function App() {
   const [count, setCount] = useState(0);
-  const host = process.env.GATHER_API_HOST;
-  axios.get(`${host}/count`).then((res) => {
+  axios.get('/count').then((res) => {
     setCount(res.data.count);
   });
   return (
