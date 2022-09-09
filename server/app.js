@@ -13,7 +13,7 @@ const SPACE_ID = process.env.GATHER_SPACE_ID;
 
 const game = new Game(SPACE_ID, () => Promise.resolve({ apiKey: API_KEY }));
 // this is the line that actually connects to the server and starts initializing stuff
-game.connect();
+game.connect(SPACE_ID);
 // optional but helpful callback to track when the connection status changes
 game.subscribeToConnection((connected) => console.log("connected?", connected));
 game.subscribeToEvent("playerJoins", (player) => {
