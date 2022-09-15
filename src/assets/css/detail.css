@@ -1,0 +1,32 @@
+.players-detail {
+  margin-top: 10px;
+  min-height: 60px;
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.players-detail::-webkit-scrollbar {
+  display: none;
+}
+
+.players-detail .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.players-detail .box p {
+  font-weight: 600;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  box-shadow:  -8px -8px 15px rgba(255,255,255,1), 8px 8px 15px rgba(0,0,0,0.15);
+}

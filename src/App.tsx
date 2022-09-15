@@ -1,9 +1,12 @@
 import OnlinePlayerDisplay from './components/OnlinePlayerDisplay';
+import OnlinePlayersDetail from './components/OnlinePlayersDetail';
+import './assets/css/common.css';
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <OnlinePlayerDisplay />
+      <OnlinePlayersDetail />
     </div>
   );
 }

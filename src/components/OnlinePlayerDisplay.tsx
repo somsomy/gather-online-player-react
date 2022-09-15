@@ -1,6 +1,6 @@
-import '../assets/css/common.css';
-import { useNumberOfPlayers } from '../api/gather';
 import { useEffect, useRef } from 'react';
+import { useNumberOfPlayers } from '../api/gather';
+import '../assets/css/display.css';
 
 export default function OnlinePlayerDisplay() {
   const textRef = useRef<HTMLParagraphElement>(null);
