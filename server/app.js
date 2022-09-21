@@ -1,5 +1,5 @@
 const path = require('path');
-const cors = require('cors');
+// const cors = require('cors');
 const dotenv = require('dotenv');
 const express = require('express');
 
@@ -11,18 +11,18 @@ const API_KEY = process.env.GATHER_API_KEY;
 const SPACE_ID = process.env.GATHER_SPACE_ID;
 
 const app = express();
-const whiteList = ['http://localhost:3000', 'https://gather-online-player.herokuapp.com'];
-const corsOptions = {
-  origin: function (origin, callBack) {
-    if (whiteList.indexOf(origin) !== -1) {
-      callBack(null, true);
-    } else {
-      callBack(new Error('Not Allowed Origin'));
-    }
-  }
-};
+// const whiteList = ['http://localhost:3000', 'https://gather-online-player.herokuapp.com'];
+// const corsOptions = {
+//   origin: function (origin, callBack) {
+//     if (whiteList.indexOf(origin) !== -1) {
+//       callBack(null, true);
+//     } else {
+//       callBack(new Error('Not Allowed Origin'));
+//     }
+//   }
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, '../build')));
 
 // gather
