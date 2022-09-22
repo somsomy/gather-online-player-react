@@ -12,6 +12,7 @@ export default function OnlinePlayersDetail() {
     arrows: false,
     vertical: true,
     slidesToShow: 3,
+    slidesToScroll: 1,
     verticalSwiping: true,
     speed: 2000,
     autoplaySpeed: 2000,
@@ -20,7 +21,7 @@ export default function OnlinePlayersDetail() {
 
   return (
     <div className="players-detail">
-      <Slider {...settings} autoplay={data && data.length >= 3} infinite={data && data.length >= 3}>
+      <Slider {...settings} autoplay infinite={data && data.length >= 3}>
         {data?.map((player) => (
           <div key={player}>
             <div className="box">
