@@ -7,8 +7,8 @@ dotenv.config();
 global.WebSocket = require('isomorphic-ws');
 const { Game } = require('@gathertown/gather-game-client');
 
-const API_KEY = process.env.GATHER_API_KEY;
-const SPACE_ID = process.env.GATHER_SPACE_ID;
+const API_KEY = process.env.REACT_APP_GATHER_API_KEY;
+const SPACE_ID = process.env.REACT_APP_GATHER_SPACE_ID;
 
 const app = express();
 // const whiteList = ['http://localhost:3000', 'https://gather-online-player.herokuapp.com'];
